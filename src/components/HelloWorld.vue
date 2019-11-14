@@ -35,6 +35,9 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted () {
+    this.axios.get('/users').then(data => console.log(data))
   }
 }
 </script>

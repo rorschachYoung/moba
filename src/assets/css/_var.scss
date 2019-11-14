@@ -1,0 +1,132 @@
+/* 背景 */
+$--primary : #db9e3f;
+html,body,div,p {
+    box-sizing: border-box;
+}
+.bg-primary{
+    background:$--primary;
+}
+.bg-black{
+    background: #171826;
+}
+/* 字体样式 */
+.color-primary{
+    color: #db9e3f;
+}
+.color-white{
+    color:white;
+}
+.color-grey{
+    color:#666;
+}
+@for $v from 8 through 32{
+    .fs-#{$v}{
+        font-size: #{$v}px;
+    }
+}
+.text-right{
+    text-align: right !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-left{
+    text-align: left !important;
+}
+/* flex样式 */
+.flex{
+    display: flex;
+}
+.flex-y{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-sa{
+    justify-content: space-around;
+}
+.ai-center{
+    align-items: center;
+}
+.ai-start{
+    align-items: flex-start;
+}
+.flex-ai-end{
+    align-items: flex-end;
+}
+.flex-1{
+    flex:1;
+}
+/* padding 样式 */
+@for $v from 1 through 50{
+    .pt-#{$v} {
+        padding-top:#{$v}px;
+    }
+    .pb-#{$v} {
+        padding-bottom:#{$v}px;
+    }
+    .pl-#{$v} {
+        padding-left:#{$v}px;
+    }
+    .pr-#{$v} {
+        padding-right:#{$v}px;
+    }
+    .px-#{$v} {
+        padding-left:#{$v}px;
+        padding-right:#{$v}px;
+    }
+    .py-#{$v} {
+        padding-top:#{$v}px;
+        padding-bottom:#{$v}px;
+    }
+    .p-#{$v} {
+        padding:#{$v}px;
+    }
+} 
+/* margin样式 */
+@for $v from 1 through 50{
+    .mt-#{$v} {
+        margin-top:#{$v}px;
+    }
+    .mb-#{$v} {
+        margin-bottom:#{$v}px;
+    }
+    .ml-#{$v} {
+        margin-left:#{$v}px;
+    }
+    .mr-#{$v} {
+        margin-right:#{$v}px;
+    }
+    .mx-#{$v} {
+        margin-left:#{$v}px;
+        margin-right:#{$v}px;
+    }
+    .my-#{$v} {
+        margin-top:#{$v}px;
+        margin-bottom:#{$v}px;
+    }
+    .m-#{$v} {
+        margin:#{$v}px;
+    }
+} 
+/* display */
+.d-b{
+    display: block;
+}
+.d-inb{
+    display:inline-block;
+}
+/* button 按钮 */
+.btn{
+    border-radius: 2px;
+    font-size: 12px;
+    color:black;
+}
+
